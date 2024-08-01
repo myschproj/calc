@@ -196,17 +196,19 @@ body {
 }
 
 #trigonometric-container {
-    background: var(--button-color);
+    background: #2a2a2a94;
+    backdrop-filter:blur(15px);
     position: absolute;
     top: 150%;
     width: max-content;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    box-shadow: 0 0 10px rgb(73, 73, 73);
+    box-shadow: 0 0 80px rgb(255 255 255 / 15%);
     z-index: 10;
     transform: rotateX(90deg);
     transform-origin: top;
     transition: transform 300ms;
+    border-radius: 20px;
 }
 
 #trigonometric-container.visible {
